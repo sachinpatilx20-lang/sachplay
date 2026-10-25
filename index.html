@@ -4,7 +4,7 @@
 <link rel="icon" type="image/svg+xml" href="icon.svg">
 <link rel="apple-touch-icon" href="icon.svg">
 <body style="margin:0;background:#000">
-<input type="file" accept="video/*" id="f" style="margin:12px;color:#fff">
+<input type="file" id="f" style="margin:12px;color:#fff">
 <video id="v" controls playsinline style="width:100%"></video>
 <script>
 f.onchange = () => { v.src = URL.createObjectURL(f.files[0]); v.play(); };
